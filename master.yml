@@ -1,0 +1,7 @@
+---
+- hosts: localhost
+  roles:
+    - geerlingguy.ntp 
+  post_tasks:
+    - debug: 
+        msg: "NTP Configured."
